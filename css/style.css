@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+
 * {
     margin: 0;
     padding: 0;
@@ -22,11 +25,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid rgb(39, 88, 180);
+    border-bottom: 3px solid rgb(133, 175, 252);
 }
 header{
     font-size: 80px;
-    -webkit-text-stroke: 1px rgb(39, 88, 180);
+    color: white;
+    -webkit-text-stroke: 1px rgb(133, 175, 252);
    
   
 }
@@ -41,6 +45,7 @@ main {
 
 footer {
     grid-area: fo;
+    border-top: 3px solid rgb(133, 175, 252);
     background-color: rgb(56, 56, 56);
     display: flex;
     justify-content: center;
@@ -49,6 +54,7 @@ footer {
 }
 footer > h1{
 height: 50px;
+
 }
 
 #section1 {
@@ -77,13 +83,78 @@ height: 50px;
 
 .main_section {
    
-    border: solid rgb(39, 88, 180);
+    border: solid rgb(133, 175, 252);
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 20px;
     justify-content: center;
 
-
 }
+
+.navlinks {
+   display: flex;
+   flex-direction: column;
+   height: 90vh;
+   width: 20%;
+   position: absolute;
+   right: 0px;
+   top: -90vh;
+   background-color: rgb(32, 32, 32); 
+   justify-content: space-evenly;
+   align-items: center;
+   transition: 0.2s;
+}
+.navlinks li{
+    list-style: none;
+}
+.navlinks a{
+    color: rgb(133, 175, 252);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nav_active{
+    transform: translateY(90vh);
+    margin-top: 100px;
+    width: 100%;
+    border-bottom: solid rgb(133, 175, 252);
+
+    
+}
+
+.nav_icon div{
+    background-color: rgb(133, 175, 252);
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+    border-radius: 10%;
+    
+}
+.nav_icon{
+    margin-right: 50px;
+}
+.nav_icon:hover{
+    cursor: pointer;
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+ 
+}
+.toggle .line2{ 
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+
+
 
