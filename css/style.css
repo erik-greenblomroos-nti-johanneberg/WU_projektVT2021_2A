@@ -25,12 +25,14 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid rgb(133, 175, 252);
+    z-index: 99;
+
+
 }
 header{
     font-size: 80px;
     color: white;
     -webkit-text-stroke: 1px rgb(133, 175, 252);
-   
   
 }
 main {
@@ -41,7 +43,6 @@ main {
     align-items: center;
     
 }
-
 footer {
     grid-area: fo;
     border-top: 3px solid rgb(133, 175, 252);
@@ -51,16 +52,40 @@ footer {
     flex-wrap: wrap;
 
 }
-footer > h1{
-height: 50px;
-
+footer  h1{
+    height: 50px;
 }
 
 #section1 {
     width: 100%;
     height: 280px;
     background-color: rgb(56, 56, 56);
+    
+
 }
+.button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+.article_section_fade{
+    
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.article_section_fade .read_more{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-image: linear-gradient(to bottom, transparent, rgb(56, 56, 56));
+    border-radius: 20px;
+}
+
 #section2 {
     width: 100%;
     height: 280px;
@@ -81,21 +106,35 @@ height: 50px;
 }
 
 .main_section {
-   
     border: solid rgb(133, 175, 252);
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 20px;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
+.main_section h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.main_section article{
+    margin-bottom: 10px;
+    color: rgb(158, 158, 158);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.main_section a{
+    text-decoration: none;
+    color: rgb(158, 158, 158)
+}
 .navlinks {
    display: flex;
    flex-direction: column;
    height: 90vh;
-   width: 20%;
+   width: 100%;
    position: absolute;
    right: 0px;
    top: -90vh;
@@ -119,7 +158,6 @@ height: 50px;
 .nav_active{
     transform: translateY(90vh);
     margin-top: 100px;
-    width: 100%;
     border-bottom: solid rgb(133, 175, 252);
 
     
@@ -135,6 +173,7 @@ height: 50px;
 }
 .nav_icon{
     margin-right: 50px;
+    
 }
 .nav_icon:hover{
     cursor: pointer;
@@ -150,7 +189,13 @@ height: 50px;
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+h1 {
+    color: white;
+}
 
+article section{
+    margin-bottom: 10px;
+}
 
 
 
