@@ -8,7 +8,7 @@
 
 #main_wrapper{
     display: grid;
-    grid-template-rows: 100px 1500px 500px;
+    grid-template-rows: 100px 1500px 503px;
     height: 2100px;
     width: 100%;
     grid-template-areas: 
@@ -284,8 +284,8 @@ article section{
 
 #grid_wrapper_account{
     display: grid;
-    grid-template-rows: 100px 400px 500px;
-    min-height: 1000px;
+    grid-template-rows: 100px 600px 500px;
+    height: 1200px;
     width: 100%;
     grid-template-areas: 
     "hn"
@@ -308,13 +308,13 @@ grid-template-areas:
 
 #footer_1 {
     grid-area: fo1;
-    display: flex;
-    flex-wrap: wrap;
+    
     
 }
 
 #footer_2{
     grid-area: fo2;
+   
 }
 #footer_header{
     grid-area: fh1;
@@ -333,11 +333,24 @@ grid-template-areas:
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
    
 }
 .blue_line{
     width: 80%;
     height: 3px;
     background-color: rgb(133, 175, 252);
+    display: block;
 }
-
+.footer_title{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+.block_cluster{
+    display: flex;
+    flex-wrap: wrap;
+}
