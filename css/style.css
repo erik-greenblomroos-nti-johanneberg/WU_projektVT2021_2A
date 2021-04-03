@@ -62,7 +62,7 @@ footer  h1{
 #section1 {
     width: 100%;
     height: 280px;
-    background-color: rgb(56, 56, 56);
+   
 }
 
 .button{
@@ -84,26 +84,21 @@ footer  h1{
     width: 100%;
     text-align: center;
     padding: 40px 0;
-    background-image: linear-gradient(to bottom, transparent, rgb(56, 56, 56));
+    background-image: linear-gradient(to bottom, transparent, rgb(37, 37, 37));
     border-radius: 20px;
 }
 
 #section2 {
     width: 100%;
     height: 280px;
-    background-color: rgb(56, 56, 56);
-    
 }
 #section3 {
     width: 100%;
     height: 560px;
-    background-color: rgb(56, 56, 56);
-    
 }
 #section4 {
     width: 100%;
     height: 280px;
-    background-color: rgb(56, 56, 56);
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -118,12 +113,13 @@ footer  h1{
 .main_section {
     border: solid rgb(133, 175, 252);
     display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 20px;
     align-items: center;
     flex-direction: column;
     width: 100%;
+    background-color: rgb(37, 37, 37);
 
 }
 
@@ -209,10 +205,10 @@ article section{
     margin-bottom: 10px;
 }
 
-#grid_wrapper_2{
+#grid_wrapper_service{
     display: grid;
-    grid-template-rows: 100px 1500px 500px;
-    height: 2100px;
+    grid-template-rows: 100px 1500px 503px;
+    height: 2103px;
     width: 100%;
     grid-template-areas: 
     "hn"
@@ -261,8 +257,8 @@ article section{
 
 #grid_wrapper_account{
     display: grid;
-    grid-template-rows: 100px 600px 500px;
-    height: 1200px;
+    grid-template-rows: 100px 600px 503px;
+    height: 1203px;
     width: 100%;
     grid-template-areas: 
     "hn"
@@ -283,20 +279,6 @@ article section{
     color: rgb(133, 175, 252);
 }
 
-#grid_wrapper_account{
-    display: grid;
-    grid-template-rows: 100px 600px 500px;
-    height: 1200px;
-    width: 100%;
-    grid-template-areas: 
-    "hn"
-    "ma"
-    "fo"
-    ;
-}
-
-    
-    
 #footer_wrapper{
 display: grid;
 grid-template-columns: 50% 50%;
@@ -309,19 +291,17 @@ grid-template-areas:
 
 #footer_1 {
     grid-area: fo1;
-    
-    
+    padding: 20px;
 }
-
 #footer_2{
     grid-area: fo2;
+    padding: 20px;
    
 }
 #footer_header{
     grid-area: fh1;
     display: flex;
     justify-content: center;
-    
 }
 
 .contact_icon{
@@ -329,35 +309,68 @@ grid-template-areas:
     width: 80px;
 }
 .footer_section{
-    width: 100%;
+    width: 200px;
     height: 70px;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    
    
 }
 .blue_line{
-    width: 80%;
+    width: 100%;
     height: 3px;
     background-color: rgb(133, 175, 252);
     display: block;
 }
 .footer_title{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    
-    
-}
-.block_cluster{
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+
 }
 
-.icon_text {
+.block_cluster{
     display: flex;
-   
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.icon_text_bundle {
+    display: flex;
     flex-wrap: wrap;
 }
+.icon_text{
+    color: rgb(255, 255, 255);
+    
+}
+
+.photo_gallery img{
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    
+    
+}
+.photo_gallery{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    
+}
+
+#grid_wrapper_support{
+    display: grid;
+    grid-template-rows: 100px 550px 503px;
+    height: 1153px;
+    width: 100%;
+    grid-template-areas: 
+    "hn"
+    "ma"
+    "fo"
+    ;
+}
+
