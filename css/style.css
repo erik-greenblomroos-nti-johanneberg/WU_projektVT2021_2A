@@ -4,8 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
-
 #main_wrapper{
     display: grid;
     grid-template-rows: 100px 1500px 503px;
@@ -113,6 +113,7 @@ footer  h1{
 .main_section {
     border: solid rgb(133, 175, 252);
     display: flex;
+    
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 20px;
@@ -216,7 +217,6 @@ article section{
     "fo"
     ;
 }
-
 .game_preview{
     height: 220px;
     width: 100%;
@@ -226,9 +226,9 @@ article section{
     background-size: cover;
     text-decoration: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 45px;
     color: white;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
@@ -359,18 +359,134 @@ grid-template-areas:
     align-items: center;
     flex-direction: column;
    
+}
+.two_main{
+    display: flex;
+    flex-direction: column;  
+}
+.game_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+@media (min-width: 1000px) {
     
-}
 
-#grid_wrapper_support{
+    .one_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .grid_wrapper_single{
+        display: grid;
+        grid-template-rows: 100px 700px 503px;
+        height: 1303px;
+        width: 100%;
+        grid-template-areas: 
+        "hn"
+        "ma"
+        "fo"
+        ;
+    }
+    #grid_wrapper_service{
+        display: grid;
+        grid-template-rows: 100px 880px 503px;
+        height: 1203px;
+        width: 100%;
+        grid-template-areas: 
+        "hn"
+        "ma"
+        "fo"
+        ;
+    }
+    .grid_wrapper_double{
+        display: grid;
+        width: 100%;
+        height: 600px;
+        grid-template-rows: 100px 600px;
+        grid-template-areas: 
+        "sh1"
+        "sgp"
+        ;
+    }
+    .game_preview{
+        width: 500px;
+        height: 200px;
+    }
+    .two_main h1{
+        grid-area: sh1;
+    }
+    .two_main .game_preview{
+        grid-area: sgp;
+    }
+    
+    
+    .game_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+
+    }
+ .grid_wrapper_double{
     display: grid;
-    grid-template-rows: 100px 550px 503px;
-    height: 1153px;
     width: 100%;
+    height: 600px;
+    grid-template-rows: 100px 500px;
     grid-template-areas: 
-    "hn"
-    "ma"
-    "fo"
+    "sh1"
+    "sgp"
     ;
+ }
+ .index_section{
+    width: 50%;
+}
+.index_sections .main_section{
+     
 }
 
+}
+@media (min-width: 1500px){
+    #grid_wrapper_service{
+        display: grid;
+        grid-template-rows: 100px 500px 503px;
+        height: 1103px;
+        width: 100%;
+        grid-template-areas: 
+        "hn"
+        "ma"
+        "fo"
+        ;
+    }
+    .grid_wrapper_double{
+        display: grid;
+        width: 100%;
+        height: 500px;
+        grid-template-rows: 100px 400px;
+        grid-template-areas: 
+        "sh1"
+        "sgp"
+        ;
+    }
+    .two_main h1{
+        grid-area: sh1;
+    }
+    .two_main .game_preview{
+        grid-area: sgp;
+    }
+    .game_preview{
+        width: 500px;
+        height: 200px;
+
+    }
+    .game_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+
+    }
+}
