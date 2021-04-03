@@ -30,10 +30,11 @@
 
 
 }
-header{
+header a{
     font-size: 80px;
     color: white;
     -webkit-text-stroke: 1px rgb(133, 175, 252);
+    text-decoration: none;
   
 }
 main {
@@ -352,5 +353,11 @@ grid-template-areas:
 }
 .block_cluster{
     display: flex;
+    flex-wrap: wrap;
+}
+
+.icon_text {
+    display: flex;
+   
     flex-wrap: wrap;
 }
