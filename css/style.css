@@ -62,6 +62,7 @@ footer  h1{
 #section1 {
     width: 100%;
     height: 280px;
+  
    
 }
 
@@ -91,10 +92,12 @@ footer  h1{
 #section2 {
     width: 100%;
     height: 280px;
+    
 }
 #section3 {
     width: 100%;
     height: 560px;
+    
 }
 #section4 {
     width: 100%;
@@ -108,6 +111,7 @@ footer  h1{
 }
 #section4 h1 {
     font-size: 100px;
+   
 }
 
 .main_section {
@@ -273,6 +277,7 @@ article section{
     height: 580px;
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(32, 32, 32);
 }
 #section_account h1 a{
     text-decoration: underline;
@@ -419,7 +424,7 @@ grid-template-areas:
     .two_main h1{
         grid-area: sh1;
     }
-    .two_main .game_preview{
+    .two_main .game_wrapper{
         grid-area: sgp;
     }
     
@@ -441,12 +446,60 @@ grid-template-areas:
     "sgp"
     ;
  }
- .index_section{
-    width: 50%;
+ .main_sections{
+    grid-template-rows: 100px 800px;
+    height: 900px;
+    width: 100%;
+    grid-template-areas: 
+    "ih"
+    "is"
+    ;
 }
-.index_sections .main_section{
-     
+.main_sections h1{
+    grid-area: ih;
 }
+#index_sections{
+    grid-area: is;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+#index_sections .main_section {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    
+}
+#section1 {
+    width: 45%;
+    height: 350px; 
+}
+#section2 {
+    width: 45%;
+    height: 350px;  
+}
+#section3 {
+    width: 45%;
+    height: 350px;
+}
+#section4 {
+    width: 45%;
+    height: 350px
+}
+
+#main_wrapper{
+    display: grid;
+    grid-template-rows: 100px 900px 503px;
+    height: 1503px;
+    width: 100%;
+    grid-template-areas: 
+    "hn"
+    "ma"
+    "fo"
+    ;
+}
+
 
 }
 @media (min-width: 1500px){
