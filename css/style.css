@@ -141,7 +141,7 @@ footer  h1{
 }
 .main_section article{
     margin-bottom: 10px;
-    color: rgb(158, 158, 158);
+    color: rgb(180, 180, 180);
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -233,7 +233,7 @@ article section{
     width: 100%;
     border: solid rgb(133, 175, 252);
     border-radius: 20px; 
-    background-color: rgb(158, 158, 158);
+    background-color: rgb(180, 180, 180);
     background-size: cover;
     text-decoration: none;
     display: flex;
@@ -384,7 +384,11 @@ grid-template-areas:
 
 
 }
-
+@media (max-width: 500px){
+    .ezhost_logo{
+        height: 40px;
+    }
+}
 
 @media (min-width: 800px) {
     
