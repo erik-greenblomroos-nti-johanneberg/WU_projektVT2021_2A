@@ -6,6 +6,7 @@
     box-sizing: border-box;
     
 }
+
 #main_wrapper{
     display: grid;
     grid-template-rows: 100px 1500px 503px;
@@ -29,6 +30,12 @@
     
 
 
+}
+.ezhost_logo{
+    height: 60px;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 header a{
     font-size: 80px;
@@ -387,8 +394,8 @@ grid-template-areas:
     }
     .grid_wrapper_single{
         display: grid;
-        grid-template-rows: 100px 700px 503px;
-        height: 1303px;
+        grid-template-rows: 100px 1fr 503px;
+        height: 100vh;
         width: 100%;
         grid-template-areas: 
         "hn"
@@ -410,8 +417,8 @@ grid-template-areas:
     .grid_wrapper_double{
         display: grid;
         width: 100%;
-        height: 600px;
-        grid-template-rows: 100px 600px;
+        height: 100vh;
+        grid-template-rows: 100px 1fr;
         grid-template-areas: 
         "sh1"
         "sgp"
