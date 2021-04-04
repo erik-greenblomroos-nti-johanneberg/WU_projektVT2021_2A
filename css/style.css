@@ -237,11 +237,12 @@ article section{
     background-size: cover;
     text-decoration: none;
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    
+    margin: 10px;
     font-size: 45px;
     color: white;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
+    
 }
 
 #game01{
@@ -384,7 +385,8 @@ grid-template-areas:
 
 }
 
-@media (min-width: 1000px) {
+
+@media (min-width: 800px) {
     
 
     .one_main{
@@ -425,7 +427,7 @@ grid-template-areas:
         ;
     }
     .game_preview{
-        width: 500px;
+        width: 45%;
         height: 200px;
     }
     .two_main h1{
@@ -453,59 +455,64 @@ grid-template-areas:
     "sgp"
     ;
  }
- .main_sections{
-    grid-template-rows: 100px 800px;
-    height: 900px;
-    width: 100%;
-    grid-template-areas: 
-    "ih"
-    "is"
-    ;
-}
-.main_sections h1{
-    grid-area: ih;
-}
-#index_sections{
-    grid-area: is;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-#index_sections .main_section {
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    
-}
-#section1 {
-    width: 45%;
-    height: 350px; 
-}
-#section2 {
-    width: 45%;
-    height: 350px;  
-}
-#section3 {
-    width: 45%;
-    height: 350px;
-}
-#section4 {
-    width: 45%;
-    height: 350px
-}
+ 
 
-#main_wrapper{
-    display: grid;
-    grid-template-rows: 100px 900px 503px;
-    height: 1503px;
-    width: 100%;
-    grid-template-areas: 
-    "hn"
-    "ma"
-    "fo"
-    ;
+
 }
+@media (min-width: 1100px) {
+    .main_sections{
+        grid-template-rows: 100px 800px;
+        height: 900px;
+        width: 100%;
+        grid-template-areas: 
+        "ih"
+        "is"
+        ;
+    }
+    .main_sections h1{
+        grid-area: ih;
+    }
+    #index_sections{
+        grid-area: is;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    #index_sections .main_section {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        
+    }
+    #section1 {
+        width: 45%;
+        height: 350px; 
+    }
+    #section2 {
+        width: 45%;
+        height: 350px;  
+    }
+    #section3 {
+        width: 45%;
+        height: 350px;
+    }
+    #section4 {
+        width: 45%;
+        height: 350px
+    }
+    
+    #main_wrapper{
+        display: grid;
+        grid-template-rows: 100px 900px 503px;
+        height: 1503px;
+        width: 100%;
+        grid-template-areas: 
+        "hn"
+        "ma"
+        "fo"
+        ;
+    }
 
 
 }
@@ -538,8 +545,9 @@ grid-template-areas:
         grid-area: sgp;
     }
     .game_preview{
-        width: 500px;
+        width: 30%;
         height: 200px;
+       
 
     }
     .game_wrapper{
