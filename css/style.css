@@ -176,7 +176,10 @@ footer h1 {
     background-image: url(/img/host_serverexpert_2.jpg);
     background-size: cover;
 }
+.topic_tagg{
+    font-family: fantasy;
 
+}
 .corner_button{
     height: 50px;
     width: 100%;
