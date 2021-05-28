@@ -121,6 +121,11 @@ footer h1 {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+.section_title{
+    font-family: fantasy;
+    font-size: 30px;
+}
 .game_highlight {
     height: 200px;
     width: auto;
@@ -256,6 +261,14 @@ section{
 .support_undertext {
     margin: 20px;
     color: rgb(255, 255, 255);
+    background-color: rgb(66, 66, 66);
+    width: fit-content;
+    border-radius: 6px;
+    
+}
+#support_undertext_lightbackground{
+    background-color: rgba(66, 66, 66, 0);
+
 }
 .main_section article {
     margin-bottom: 10px;
