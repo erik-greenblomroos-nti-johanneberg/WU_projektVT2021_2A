@@ -117,6 +117,9 @@ footer h1 {
     width: 100%;
     background-color: #252525;
 }
+#support_section{
+    border: none;
+}
 .main_section h1 {
     margin-bottom: 10px;
     margin-top: 10px;
