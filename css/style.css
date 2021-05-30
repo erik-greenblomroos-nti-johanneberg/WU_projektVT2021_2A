@@ -126,7 +126,7 @@ footer h1 {
 }
 
 .section_title{
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
 }
 .game_highlight {
@@ -141,17 +141,17 @@ footer h1 {
     flex-direction: column;
 }
 section{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#top_section{
+.top_section{
     display: flex;
-    align-items:center;
+    align-items: center;
     width: 100%;
     justify-content: space-evenly;
  }
 #bottom_section{
     display: flex;
-    align-items:center;
+    align-items: center;
     width: 100%;
     justify-content: space-evenly;
  }
@@ -275,7 +275,7 @@ section{
 }
 .main_section article {
     margin-bottom: 10px;
-    color: #b4b4b4;
+    color: #cecece;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -380,7 +380,7 @@ article section {
 #game06 {
     background-image: url(/img/host_game_rust.jpg);
 }
-.section_h1 {
+#section_h1 {
     -webkit-text-stroke: 2px #000;
 }
 #grid_wrapper_account {
@@ -467,7 +467,7 @@ article section {
     align-items: center;
     flex-direction: column;
 }
-.two_main {
+#two_main {
     display: flex;
     flex-direction: column;
 }
@@ -504,31 +504,24 @@ article section {
     .grid_wrapper_double {
         display: grid;
         width: 100%;
-        height: 100vh;
-        grid-template-rows: 100px 1fr;
+        height: 100%;
+        grid-template-rows: 100px auto;
         grid-template-areas: "sh1" "sgp";
     }
     .game_preview {
         width: 45%;
         height: 200px;
     }
-    .two_main h1 {
+    #two_main h1 {
         grid-area: sh1;
     }
-    .two_main .game_wrapper {
+    #two_main .game_wrapper {
         grid-area: sgp;
     }
     .game_wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }
-    .grid_wrapper_double {
-        display: grid;
-        width: 100%;
-        height: 600px;
-        grid-template-rows: 100px 500px;
-        grid-template-areas: "sh1" "sgp";
     }
 }
 @media (min-width: 1100px) {
@@ -585,17 +578,11 @@ article section {
         width: 100%;
         grid-template-areas: "hn" "ma" "fo";
     }
-    .grid_wrapper_double {
-        display: grid;
-        width: 100%;
-        height: 500px;
-        grid-template-rows: 100px 400px;
-        grid-template-areas: "sh1" "sgp";
-    }
-    .two_main h1 {
+    
+    #two_main h1 {
         grid-area: sh1;
     }
-    .two_main .game_preview {
+    #two_main .game_preview {
         grid-area: sgp;
     }
     .game_preview {
@@ -610,6 +597,9 @@ article section {
     
 }
 @media (max-width: 850px) {
+    .game_preview{
+        font-size: 30px;
+    }
     .section_picture {
         width: 100%;
         height: auto;
@@ -619,16 +609,29 @@ article section {
     .text_block {
         width: 100%;
     }
-    #top_section{
+    .top_section{
         display: block;
-        align-items:none;
+        flex-direction: column;
+       
      }
     #bottom_section{
         display: flex;
         flex-direction: column-reverse;
-        align-items:none;
+        
+    }
+    
+    #section4 .topic_tagg{
+        font-size: 50px;
+        font-family: sans-serif;
+    }
+    .topic_tagg{
+        font-family: sans-serif;
+    }
+    .game_preview{
+        font-family: sans-serif;
     }
 }
+
 
 
 @media (max-width: 800px) {
